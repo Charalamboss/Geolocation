@@ -32,7 +32,7 @@ get '/second' do
 
   	@place=Place.create(name: "David",)
   	@place1=Place.find(1)
-  	@place3={:name=> Place.all}.to_json
+  	@place3=Place.all.to_json(:only =>[:id,:name]) # map the variables we want to convert to Json
 	@place2=Place.all
 	erb :secondtest
 end
