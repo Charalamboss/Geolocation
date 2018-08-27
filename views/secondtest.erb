@@ -10,9 +10,13 @@
 </head>
 
 <body>
+	<div>
+		
+	</div>
 	<div class='sidebar'>
   <div class='heading'>
-    <h1>Our locations</h1>
+    <h1>Our locations olan <%=@place3 %>	
+    </h1>
   </div>
   <div id='listings' class='listings'></div>
 </div>
@@ -38,6 +42,7 @@ var map = new mapboxgl.Map({
   // initial zoom
   zoom: 14
 });
+var stores2=<%=@place3 %>
 var stores = {
         "type": "FeatureCollection",
         "features": [
