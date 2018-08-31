@@ -1,3 +1,4 @@
+/*
 mapboxgl.accessToken = 'pk.eyJ1IjoiY2hhcmlzOTAiLCJhIjoiY2prdnlndXhvMHR3ZzNxbXJ3cDc5dHAydiJ9.jaUYJBfa5ZVPxvzbXJ56hQ';
 // This adds the map to your page
 var map = new mapboxgl.Map({
@@ -60,3 +61,4 @@ function buildLocationList(data) {
     }
   }
 }
+*/
