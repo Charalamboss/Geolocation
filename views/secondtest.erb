@@ -15,7 +15,7 @@
 <body>
 
 <div class='sidebar pad2'>Listing></div>
-<%=@geojson.to_json%>
+
 <div id='map' class='map pad2'>Map</div>
 </body>
 
@@ -30,8 +30,12 @@
   		zoom: 14
 	});
 
-	var stores = <%=@geojson.to_json%>
-	alert(stores.to_json)
+	var stores ={
+  "type": "FeatureCollection",
+  "features": <%=@geojson.to_json%>
+}
+
+	alert(stores)
 	console.log(stores)
 map.on('load', function(e) {
   // Add the data to your map as a layer

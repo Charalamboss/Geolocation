@@ -40,7 +40,7 @@ get '/second' do
 			type: 'Feature',
 			geometry:{
 				type: 'Point',
-				coordinates: [place.longt,place.latt]
+				coordinates: [place.latt.to_f,place.longt.to_f]
 			},
 			properties: {
 				name: place.name,
