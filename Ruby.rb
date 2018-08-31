@@ -44,17 +44,11 @@ get '/second' do
 			},
 			properties: {
 				name: place.name,
-				address: place.street,
+				address: place.id,
      		    :'marker-color' => '#00607d',
                 :'marker-symbol' => 'circle',
                 :'marker-size' => 'medium'
-
-
-
-
-
-
-				#rest of properties if nessesary
+				#rest of properties are  unnessesary
 			}
 		}
 	end
