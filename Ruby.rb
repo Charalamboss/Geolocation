@@ -27,12 +27,13 @@ get '/mapbox' do
 end
 
 get '/second' do
-	n = Place.new
-    n.name = "para"
-
+	
+    @Place=Place.delete_all
   	@place=Place.create(name: "David", latt: "-77.034084142948", longt: "38.909671288923")
+  	@place=Place.create(name: "chuck", latt: "-77.049766", longt: "38.900772")
+  	@place=Place.create(name: "Pampos", latt: "-77.043929",longt:"38.910525")
   	#@place1=Place.find(2).to_json
-  	@place3=Place.last(10).to_json(:only =>[:id,:name,:latt]) # map the variables we want to convert to Json
+  	#@place3=Place.last(10).to_json(:only =>[:id,:name,:latt]) # map the variables we want to convert to Json
 	@place2=Place.last(5)
 	@geojson=Array.new
 	@place2.each do |place|

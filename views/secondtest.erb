@@ -14,8 +14,12 @@
 
 <body>
 
-<div class='sidebar pad2'>Listing></div>
-
+<div class='sidebar'>
+  <div class='heading'>
+    <h1>Our locations</h1>
+  </div>
+  <div id='listings' class='listings'></div>
+</div>
 <div id='map' class='map pad2'>Map</div>
 </body>
 
@@ -38,6 +42,7 @@
 	alert(stores)
 	console.log(stores)
 map.on('load', function(e) {
+  buildLocationList(stores) // execute and load all items in the listing
   // Add the data to your map as a layer
   map.addLayer({
     id: 'locations',
@@ -53,7 +58,6 @@ map.on('load', function(e) {
     }
   });
 });
-
 
 </script>
 
