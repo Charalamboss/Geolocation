@@ -4,6 +4,7 @@ class Places < ActiveRecord::Migration[5.2]
   		t.string :name
   		t.string :longt
   		t.string :latt
+  		t.string :type1
   	end
   	 
   end

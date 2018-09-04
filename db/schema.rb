@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(version: 2018_08_24_160919) do
     t.string "name"
     t.string "longt"
     t.string "latt"
+    t.string "type1"
   end
 
 end

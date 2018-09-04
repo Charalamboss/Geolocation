@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <title>Points on a map</title>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.css' rel='stylesheet' />
+  <script type="text/javascript" src="script.js"></script>
+  <link rel="stylesheet" type="text/css" href="/style.css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+
+<div class='newplace'>
+  <form action="/newplace" method="POST">
+    Place Name :<input type="text" name="placename">
+    Lattitude:<input type="text" name="lat">
+    Longitude:<input type="text" name="long">
+    <button> submit <inpute type="submit"></button>
+
+  </form>
+  <h1><%=@geojson.to_json%></h1>
+  </div>
+  
+</body>
+
+
+
+
+</html>
